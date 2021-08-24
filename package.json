@@ -1,13 +1,25 @@
 {
   "name": "gen-db-ts",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "license": "MIT",
-  "author": "joey",
+  "author": "hjoey",
   "homepage": "https://github.com/joey-lucky/gen-db-ts.git",
   "bugs": "https://github.com/joey-lucky/gen-db-ts/issues",
   "description": "自动生成数据库表类型文件",
   "bin": {
     "gen-db-ts": "./bin/index.js"
+  },
+  "main": "./lib/index.js",
+  "files": [
+    "/lib",
+    "/bin"
+  ],
+  "keywords": [
+    "gen-db-ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joey-lucky/gen-db-ts.gi"
   },
   "scripts": {
     "lint": "eslint 'src/**/*.{js,ts}' --fix",
@@ -20,16 +32,15 @@
     "@types/node": "^16.6.2",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
-    "commander": "^8.1.0",
     "eslint": "^7.32.0",
-    "node": "^16.6.1",
     "rollup": "^2.56.2",
     "rollup-plugin-cleandir": "^1.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
+    "@types/oracledb": "^5.2.1",
     "typescript": "^3.9.10"
   },
   "dependencies": {
-    "@types/oracledb": "^5.2.1",
-    "oracledb": "^5.2.0"
+    "oracledb": "^5.2.0",
+    "commander": "^8.1.0"
   }
 }
